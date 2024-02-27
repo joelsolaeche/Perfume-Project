@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +13,29 @@
   <title>Avon project</title>
 </head>
 <body class="font-merriweather bg-white">
-  <header class="bg-gradient-to-r from-black to-white flex justify-between items-center p-4 fixed top-0 left-0 right-0">
-    <img src="imgs/Brown and Yellow Minimalist Elegant Perfume Logo.png" alt="" class="h-12 w-12 rounded-xl">
+  <header class="bg-gradient-to-r from-black to-white flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-40">
+    <a href="index.html"><img src="imgs/favicon.png" alt="" class="w-16 h-auto rounded-xl"></a>
     <ul class="flex space-x-4">
-      <li class="cursor-pointer rounded-md hover:bg-black p-2 hover:text-white hover:duration-700">Productos</li>
-      <li class="cursor-pointer rounded-md hover:bg-black p-2 hover:text-white hover:duration-700">Ofertas</li>
+      <a href="#prod"><li class="cursor-pointer rounded-md hover:bg-black p-2 hover:text-white hover:duration-700">Productos</li></a>
       <li class="cursor-pointer rounded-md hover:bg-black p-2 hover:text-white hover:duration-700">Contacto</li>
     </ul>
   </header>
   <main>
-    <section class=" bg-contain sm:container sm:max-w-full">
+    <section class=" bg-contain sm:container sm:mx-auto sm:max-w-full sm:my-28">
       <img src="imgs/White Minimalist Elegant Line Art Floral Wedding Banner.png" alt="" class="w-full h-96 object-cover hidden sm:block">
       <img src="imgs/Black Gold Modern Cosmetic Logo (1).png" alt="" class="w-full h-96 object-cover sm:hidden mt-5">
     </section>
-    <section class="container mx-auto grid grid-cols-1 gap-8 w-3/5 h-3/5 m-20 sm:grid-cols-2 sm:gap-12 sm:m-36 sm:w-3/4 sm:h-3/4">
-      <div class="flex flex-col items-center shadow-lg p-6">
-        <img src="imgs/unnamed.jpg" alt="" class="rounded-lg sm:h-96  sm:rounded-lg mb-3">
+    <section id="prod" class="container mx-auto grid grid-cols-1 gap-8 w-3/5 h-3/5 m-20 sm:pt-44 sm:grid-cols-2 sm:gap-12 sm:m-36 sm:w-3/4 sm:h-3/4">
+      <a href="productosavon.html"><div class="flex flex-col items-center shadow-lg p-6 rounded-xl hover:scale-105 transition-transform duration-500 ease-in-out hover:bg-gradient-to-r from-black to-white hover:text-white hover:ease-in-out">
+        <img src="imgs/unnamed.jpg" alt="" class="rounded-full sm:h-96 sm:rounded-full mb-3">
         <p>Productos Avon</p>
-      </div>
-      <div class="flex flex-col items-center shadow-lg p-6">
-        <img src="imgs/22c76oM9_400x400.jpg" alt="" class="mb-3">
-        <p>Productos Naturas</p>
+      </div></a>
+      <div class="flex flex-col items-center shadow-lg p-6 rounded-xl hover:scale-105 transition-transform duration-500 ease-in-out hover:bg-gradient-to-r from-white to-orange-800 hover:text-white hover:ease-in-out">
+        <img src="imgs/22c76oM9_400x400.jpg" alt="" class="mb-3 rounded-full">
+        <p>Productos Natura</p>
       </div>
     </section>
-    <section class="container mx-auto grid grid-cols-1 gap-8 m-20 sm:grid sm:grid-cols-2 sm:gap-4 sm:w-3/4 sm:h-3/4 sm:m-36">
+    <section class="container mx-auto grid grid-cols-1 gap-8 m-20 sm:grid sm:grid-cols-2 sm:gap-4 sm:w-3/4 sm:h-3/4 sm:m-36 sm:pt-44">
       <div>
         <img class="w-full rounded-lg" src="imgs/woman-spraying-luxury-perfume-on-600nw-1927700651.webp" alt="">
       </div>

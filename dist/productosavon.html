@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="imgs/favicon.png" class="rounded-full">
+  <title>Avon project</title>
+</head>
+<body class="bg-white font-merriweather">
+  <header class="bg-gradient-to-r from-black to-white flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-40">
+    <a href="index.html"><img src="imgs/favicon.png" alt="" class="w-16 h-auto rounded-xl"></a>
+    <div class="w-full sm:max-w-2xl mx-auto">
+      <label for="search" class="sr-only">Search</label>
+      <div class="mt-1 relative rounded-md shadow-sm">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+        <input id="search" name="search" class="block w-full pl-10 sm:text-sm border-gray-300 rounded-md" placeholder="Buscar Productos Avon" type="text">
+      </div>
+    </div>
+    <ul class="flex space-x-4">
+      <li class="cursor-pointer rounded-md hover:bg-black p-2 hover:text-white hover:duration-700">Productos</li>
+      <li class="cursor-pointer rounded-md hover:bg-black p-2 hover:text-white hover:duration-700">Contacto</li>
+    </ul>
+  </header>
+  <main>
+    <section class="container mx-auto grid grid-cols-1 gap-4 w-3/5 h-3/5 sm:grid sm:grid-cols-4 sm:gap-8 my-32 sm:w-full sm:h-auto">
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 1.jpeg" alt="">
+        <p class="p-5">Power Stay Delineador</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 2.jpeg" alt="">
+        <img class="hidden" src="imgs/752352_1_8.jpg" alt="">
+        <p class="p-5">Esmalte Power Stay</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 3.jpeg" alt="">
+        <p class="p-5">Match</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 4.jpeg" alt="">
+        <p class="p-5">Avon Care</p>
+      </div>
+      <div  id="avon"class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg h-64 bg-cover bg-center" src="imgs/avon 5.jpeg" alt="">
+        <p class="p-5">Perfumes Avon</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 6.jpeg" alt="">
+        <p class="p-5">7 In One</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 7.jpeg" alt="">
+        <p class="p-5">Essential</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg w-1/2 h-auto" src="imgs/avon 8.jpeg" alt="">
+        <p class="p-5">Crema Avon Care</p>
+      </div>
+      <div id="avon" class="flex flex-col tems-center shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 9.jpeg" alt="">
+        <p class="p-5">Wonder</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 10.jpeg" alt="">
+        <p class="p-5">Avon Agua Miscelar</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg h-64" src="imgs/avon 11.jpeg" alt="">
+        <p class="p-5">Maquillaje</p>
+      </div>
+      <div id="avon" class="flex flex-col shadow-lg rounded-2xl">
+        <img class="rounded-lg" src="imgs/avon 12.jpeg" alt="">
+        <p class="p-5">Pur Blanca</p>
+      </div>
+
+    </section>
+    <section id="no-results" class="hidden">
+      <div class="flex-col text-center">
+        <p>Ups! No se encontraron productos</p>
+        <p>Puede que el producto deseado se encuentre en la categoria Natura</p>
+      </div>
+      <div class="flex flex-col items-center shadow-lg container mx-auto w-80 h-auto my-24 p-6 rounded-xl hover:scale-105 transition-transform duration-500 ease-in-out hover:bg-gradient-to-r from-white to-orange-800 hover:text-white hover:ease-in-out">
+        <img src="imgs/22c76oM9_400x400.jpg" alt="" class="mb-3 rounded-full">
+        <p>Productos Natura</p>
+      </div>
+    </section>
+    <section id="exit" class="container mx-auto">
+      <div class="flex-col text-center">
+        <p>¿No encontras lo que queres?</p>
+        <p>Busca en nuestro apartado Natura</p>
+      </div>
+      <div class="flex flex-col items-center shadow-lg container mx-auto w-60 h-auto my-16 sm:w-80 sm:h-auto sm:my-24 p-6 rounded-xl hover:scale-105 transition-transform duration-500 ease-in-out hover:bg-gradient-to-r from-white to-orange-800 hover:text-white hover:ease-in-out">
+        <img src="imgs/22c76oM9_400x400.jpg" alt="" class="mb-3 rounded-full">
+        <p>Productos Natura</p>
+      </div>
+
+    </section>
+  </main>
+  <footer class="bg-black mt-52 py-16">
+    <p class="text-white text-center font-bold">Todos los derechos reservados</p>
+  </footer>
+  <script src="searchfunction.js"></script>
+  <script src="carousel.js"></script>
+</body>
+
+</html>
